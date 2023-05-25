@@ -1,0 +1,4 @@
+Hola,
+1 No se porque no me corre el index.js dice como un error con los export. 
+2. no tengo muy clara la implementacion de una composicion y una asociacion.
+gracias.
