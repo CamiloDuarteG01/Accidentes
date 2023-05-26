@@ -1,10 +1,10 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const Persona_1 = require("./Persona");
-const LicenciaConduccion_1 = require("./LicenciaConduccion");
+import { Persona } from "./Persona.js";
+import { LicenciaConduccion, TiposLicencia } from "./LicenciaConduccion.js";
 let fechaExpedicion = new Date(2020, 1, 10);
 let vigencia = new Date(2024, 1, 10);
-let tipoLicencia = LicenciaConduccion_1.TiposLicencia.CategoriaA1;
-const persona1 = new Persona_1.Persona('Camilo', '1203', '3112542', '14');
-let objLicencia = new LicenciaConduccion_1.LicenciaConduccion(fechaExpedicion, vigencia, persona1, tipoLicencia);
-console.log(`La  persona con Nombre ${objLicencia.persona.Nombre} y Cedula${objLicencia.persona.Cedula} tiene el tipo de licencia ${objLicencia.tipoDeLicencia}`);
+let tipoLicencia = TiposLicencia.CategoriaA1;
+const persona1 = new Persona('Camilo', '1203', '3112542', '14');
+let objLicencia = new LicenciaConduccion(fechaExpedicion, vigencia, persona1, tipoLicencia);
+persona1.Mylicencia = objLicencia;
+console.log(`La  persona con Nombre ${persona1.Nombre} y Cedula${persona1.Cedula} tiene el tipo de licencia ${persona1.Mylicencia.tipoDeLicencia}`);
+//# sourceMappingURL=index.js.map

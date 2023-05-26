@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Vehiculo = void 0;
-class Vehiculo {
+export class Vehiculo {
     constructor(propietario, marca, modelo, color, ruedas) {
         this.propietario = propietario;
         this.marca = marca;
@@ -11,4 +8,4 @@ class Vehiculo {
         this.reportes = [];
     }
 }
-exports.Vehiculo = Vehiculo;
+//# sourceMappingURL=Vehiculo.js.map

@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Persona = void 0;
-class Persona {
+export class Persona {
     constructor(nombre = '', cedula = '', telefono = '', edad = '', myLicencia) {
         this.nombre = nombre;
         this.cedula = cedula;
@@ -23,16 +20,9 @@ class Persona {
     get Edad() {
         return this.edad;
     }
-    /*
-    get Mylicencia(): LicenciaConduccion {
-      if (this.myLicencia !== undefined) {
+    get Mylicencia() {
         return this.myLicencia;
-      } else {
-        console.log("Licencia indefinida");
-        return undefined; // Otra opción es devolver un valor por defecto en caso de licencia indefinida
-      }
     }
-    */
     set Nombre(e) {
         this.nombre = e;
     }
@@ -49,4 +39,4 @@ class Persona {
         this.myLicencia = e;
     }
 }
-exports.Persona = Persona;
+//# sourceMappingURL=Persona.js.map

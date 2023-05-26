@@ -1,5 +1,5 @@
 import { LicenciaConduccion } from "./LicenciaConduccion";
-import { Vehiculo } from "./Vehiculo";
+import { Vehiculo } from "./Vehiculo.js";
 
 export class Persona {
   private nombre: string;
@@ -40,16 +40,12 @@ export class Persona {
   get Edad(): string {
     return this.edad;
   }
-  /*
-  get Mylicencia(): LicenciaConduccion {
-    if (this.myLicencia !== undefined) {
-      return this.myLicencia;
-    } else {
-      console.log("Licencia indefinida");
-      return undefined; // Otra opción es devolver un valor por defecto en caso de licencia indefinida
-    }
+  
+  get Mylicencia(): LicenciaConduccion | undefined{
+    return this.myLicencia;
+  
   }
-  */
+  
 
   set Nombre(e: string) {
     this.nombre = e;
@@ -63,7 +59,7 @@ export class Persona {
   set Edad(e: string) {
     this.edad = e;
   }
-  set Mylicencia(e: LicenciaConduccion) {
+  set Mylicencia(e: LicenciaConduccion |undefined) {
     this.myLicencia = e;
   }
 }

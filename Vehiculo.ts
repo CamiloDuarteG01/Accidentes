@@ -1,5 +1,5 @@
-import { Persona } from "./Persona"
-import { Accidente } from "./Accidente"
+import { Persona } from "./Persona.js"
+import { Accidente } from "./Accidente.js"
 export class Vehiculo{
     marca : string
     modelo : string

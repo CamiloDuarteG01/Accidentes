@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Accidente = void 0;
-class Accidente {
+export class Accidente {
     constructor(fecha = new Date, descrpcion, severidad) {
         this.fecha = fecha;
         this.descrpcion = descrpcion;
@@ -16,4 +13,4 @@ class Accidente {
         return totalInvolucrados += 1;
     }
 }
-exports.Accidente = Accidente;
+//# sourceMappingURL=Accidente.js.map

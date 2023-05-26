@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.LicenciaConduccion = exports.TiposLicencia = void 0;
-var TiposLicencia;
+export var TiposLicencia;
 (function (TiposLicencia) {
     TiposLicencia["CategoriaA1"] = "Categor\u00EDa A1";
     TiposLicencia["CategoriaA2"] = "Categor\u00EDa A2";
@@ -11,8 +8,8 @@ var TiposLicencia;
     TiposLicencia["CategoriaC1"] = "Categor\u00EDa C1";
     TiposLicencia["CategoriaC2"] = "Categor\u00EDa C2";
     TiposLicencia["CategoriaC3"] = "Categor\u00EDa C3";
-})(TiposLicencia = exports.TiposLicencia || (exports.TiposLicencia = {}));
-class LicenciaConduccion {
+})(TiposLicencia || (TiposLicencia = {}));
+export class LicenciaConduccion {
     constructor(fechaExpedicion, vigencia, persona, tipoDeLicencia) {
         this._fechaExpedicion = fechaExpedicion;
         this._tipoDeLicencia = tipoDeLicencia;
@@ -47,4 +44,4 @@ class LicenciaConduccion {
         this._persona = persona;
     }
 }
-exports.LicenciaConduccion = LicenciaConduccion;
+//# sourceMappingURL=LicenciaConduccion.js.map
